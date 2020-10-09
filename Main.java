@@ -18,15 +18,15 @@ public class Main {
     System.out.println("What Fibonacci number would you like to find");
     int num = input.nextInt();
     int numbers[] = new int[num];
-    int number1 = 0;
-    int number2 = 1;
+    numbers[0] = 0;
+    numbers[1] = 1;
 
     int sum = 0;
 
     for (int i = 1; i < numbers.length; i++) {
-      sum = number1 + number2;
-      number1 = number2;
-      number2 = sum;
+      sum = numbers[0] + numbers[1];
+      numbers[0] = numbers[1];
+      numbers[1] = sum;
 
     }
     System.out.println("The " + num + " Fibonacci number is " + sum);
